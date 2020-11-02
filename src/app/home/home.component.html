@@ -1,0 +1,13 @@
+
+<div class="container">
+  <h1 style="color:wheat">List All User :</h1>
+
+  <ul style="color:white">
+  <li *ngFor="let product of user">
+    <h2>{{product.name}} / {{product.role    }} <button style=" border:none;background: none;color:inherit;font: 0;cursor:pointer;outline:inherit  " (click)="deleteUser(product.id)"><i class="fas fa-trash-alt"></i></button></h2>
+    <p> {{product.email}} </p>
+  </li>
+</ul>
+</div>
+
+<a routerLink="/">Dashboard</a>

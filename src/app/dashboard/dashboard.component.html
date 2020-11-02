@@ -1,0 +1,9 @@
+<div class="container">
+ <p color="primary">
+  <button  routerLink="/home">Home</button>
+  <button  *ngIf="!auth.isLoggedIn()" routerLink="/register">Register</button>
+  <button routerLink="/addUser">AddUser</button>
+  <button  *ngIf="!auth.isLoggedIn()" routerLink="/login">Login</button>
+  <button  *ngIf="auth.isLoggedIn()" (click)="auth.logout()">Logout</button>
+</p>
+</div>
